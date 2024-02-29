@@ -68,6 +68,9 @@ def getAll():
     for category, cost in categories.items():
         print(f"    {category}: {cost}")
 
+def getExpenses():
+    for expense in expenses:
+        print(expense)
 
 
 def getCategories():
@@ -108,6 +111,7 @@ while(True):
     print("     eingabe == Ein/Ausgaben eingeben")
     print("     gesamt == Gesamt Ein und Ausgaben anzeigen")
     print("     kategorien == Kategorien anzeigen und ändern")
+    print("     umsaetze == Alle Ein/Ausgaben ansehen")
     print("     ende == Beenden")
 
     user_input = input("Funktion: ")
@@ -118,6 +122,9 @@ while(True):
         getAll()
     elif user_input == "kategorien":
         getCategories()
+    elif user_input == "umsaetze":
+        getExpenses()
+
     elif user_input == "ende":
         break
     else:
